@@ -1,15 +1,20 @@
-import React from 'react';
-import { SafeAreaView } from 'react-native';
-import CounterApp from './CounterApp';
-import ColorChangerApp from './ColorChangerApp';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
-const App = () => {
-    return (
-        <SafeAreaView style={{ flex: 1 }}>
-            <CounterApp />
-            <ColorChangerApp />
-        </SafeAreaView>
-    );
-};
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Balansag, Miguel Lourence B.</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
