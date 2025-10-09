@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Balansag, Miguel Lourence B.</Text>
+      <Text>BSIT 3 - BLOCK 1</Text>
       <StatusBar style="auto" />
     </View>
   );
